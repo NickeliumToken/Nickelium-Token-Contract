@@ -1,0 +1,941 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "payable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "ReentrancyGuardReentrantCall",
+				"type": "error"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "Paused",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "Unpaused",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "USDCContract",
+				"outputs": [
+					{
+						"internalType": "contract IERC20",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_orderID",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "buyer",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_price",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "enum SharedStructs.AssetType",
+						"name": "_assetType",
+						"type": "uint8"
+					},
+					{
+						"internalType": "enum SharedStructs.PaymentMethod",
+						"name": "_priceCurrency",
+						"type": "uint8"
+					},
+					{
+						"internalType": "bool",
+						"name": "authorizedBuyersOnly",
+						"type": "bool"
+					}
+				],
+				"name": "addBuyOrder",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_orderID",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "seller",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_price",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "enum SharedStructs.AssetType",
+						"name": "_assetType",
+						"type": "uint8"
+					},
+					{
+						"internalType": "enum SharedStructs.PaymentMethod",
+						"name": "_priceCurrency",
+						"type": "uint8"
+					},
+					{
+						"internalType": "bool",
+						"name": "authorizedBuyersOnly",
+						"type": "bool"
+					}
+				],
+				"name": "addSellOrder",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "adminControl",
+				"outputs": [
+					{
+						"internalType": "contract IAdminControl",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "adminControlAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "transferAmount",
+						"type": "uint256"
+					}
+				],
+				"name": "approveUSDC",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "authorizedAddresses",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "buyOrdersUSDC",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "orderID",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address payable",
+						"name": "user",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "price",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "fulfilledAmount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "enum SharedStructs.AssetType",
+						"name": "assetType",
+						"type": "uint8"
+					},
+					{
+						"internalType": "enum SharedStructs.PaymentMethod",
+						"name": "priceCurrency",
+						"type": "uint8"
+					},
+					{
+						"internalType": "bool",
+						"name": "authorizedBuyersOnly",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "buyOrdersUSDCLength",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "centralContract",
+				"outputs": [
+					{
+						"internalType": "contract ICentral",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "buyer",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "orderID",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "newPrice",
+						"type": "uint256"
+					}
+				],
+				"name": "changeBuyOrderPriceUSDC",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "seller",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "orderID",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "newPrice",
+						"type": "uint256"
+					}
+				],
+				"name": "changeSellOrderPriceUSDC",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "escrowHandler",
+				"outputs": [
+					{
+						"internalType": "contract IEscrowHandler",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "index",
+						"type": "uint256"
+					}
+				],
+				"name": "getBuyOrdersUSDC",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "orderID",
+								"type": "uint256"
+							},
+							{
+								"internalType": "address payable",
+								"name": "user",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "price",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "amount",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "fulfilledAmount",
+								"type": "uint256"
+							},
+							{
+								"internalType": "enum SharedStructs.AssetType",
+								"name": "assetType",
+								"type": "uint8"
+							},
+							{
+								"internalType": "enum SharedStructs.PaymentMethod",
+								"name": "priceCurrency",
+								"type": "uint8"
+							},
+							{
+								"internalType": "bool",
+								"name": "authorizedBuyersOnly",
+								"type": "bool"
+							}
+						],
+						"internalType": "struct SharedStructs.Order",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getBuyOrdersUSDC",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "orderID",
+								"type": "uint256"
+							},
+							{
+								"internalType": "address payable",
+								"name": "user",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "price",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "amount",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "fulfilledAmount",
+								"type": "uint256"
+							},
+							{
+								"internalType": "enum SharedStructs.AssetType",
+								"name": "assetType",
+								"type": "uint8"
+							},
+							{
+								"internalType": "enum SharedStructs.PaymentMethod",
+								"name": "priceCurrency",
+								"type": "uint8"
+							},
+							{
+								"internalType": "bool",
+								"name": "authorizedBuyersOnly",
+								"type": "bool"
+							}
+						],
+						"internalType": "struct SharedStructs.Order[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getHighestBuyOrderUSDC",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "orderID",
+								"type": "uint256"
+							},
+							{
+								"internalType": "address payable",
+								"name": "user",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "price",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "amount",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "fulfilledAmount",
+								"type": "uint256"
+							},
+							{
+								"internalType": "enum SharedStructs.AssetType",
+								"name": "assetType",
+								"type": "uint8"
+							},
+							{
+								"internalType": "enum SharedStructs.PaymentMethod",
+								"name": "priceCurrency",
+								"type": "uint8"
+							},
+							{
+								"internalType": "bool",
+								"name": "authorizedBuyersOnly",
+								"type": "bool"
+							}
+						],
+						"internalType": "struct SharedStructs.Order",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getLowestSellOrderUSDC",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "orderID",
+								"type": "uint256"
+							},
+							{
+								"internalType": "address payable",
+								"name": "user",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "price",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "amount",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "fulfilledAmount",
+								"type": "uint256"
+							},
+							{
+								"internalType": "enum SharedStructs.AssetType",
+								"name": "assetType",
+								"type": "uint8"
+							},
+							{
+								"internalType": "enum SharedStructs.PaymentMethod",
+								"name": "priceCurrency",
+								"type": "uint8"
+							},
+							{
+								"internalType": "bool",
+								"name": "authorizedBuyersOnly",
+								"type": "bool"
+							}
+						],
+						"internalType": "struct SharedStructs.Order",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "index",
+						"type": "uint256"
+					}
+				],
+				"name": "getSellOrdersUSDC",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "orderID",
+								"type": "uint256"
+							},
+							{
+								"internalType": "address payable",
+								"name": "user",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "price",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "amount",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "fulfilledAmount",
+								"type": "uint256"
+							},
+							{
+								"internalType": "enum SharedStructs.AssetType",
+								"name": "assetType",
+								"type": "uint8"
+							},
+							{
+								"internalType": "enum SharedStructs.PaymentMethod",
+								"name": "priceCurrency",
+								"type": "uint8"
+							},
+							{
+								"internalType": "bool",
+								"name": "authorizedBuyersOnly",
+								"type": "bool"
+							}
+						],
+						"internalType": "struct SharedStructs.Order",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getSellOrdersUSDC",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "orderID",
+								"type": "uint256"
+							},
+							{
+								"internalType": "address payable",
+								"name": "user",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "price",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "amount",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "fulfilledAmount",
+								"type": "uint256"
+							},
+							{
+								"internalType": "enum SharedStructs.AssetType",
+								"name": "assetType",
+								"type": "uint8"
+							},
+							{
+								"internalType": "enum SharedStructs.PaymentMethod",
+								"name": "priceCurrency",
+								"type": "uint8"
+							},
+							{
+								"internalType": "bool",
+								"name": "authorizedBuyersOnly",
+								"type": "bool"
+							}
+						],
+						"internalType": "struct SharedStructs.Order[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "nickeliumContract",
+				"outputs": [
+					{
+						"internalType": "contract INickelium",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "pause",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "paused",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "index",
+						"type": "uint256"
+					}
+				],
+				"name": "removeBuyOrderUSDC",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "index",
+						"type": "uint256"
+					}
+				],
+				"name": "removeSellOrderUSDC",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "sellOrdersUSDC",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "orderID",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address payable",
+						"name": "user",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "price",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "fulfilledAmount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "enum SharedStructs.AssetType",
+						"name": "assetType",
+						"type": "uint8"
+					},
+					{
+						"internalType": "enum SharedStructs.PaymentMethod",
+						"name": "priceCurrency",
+						"type": "uint8"
+					},
+					{
+						"internalType": "bool",
+						"name": "authorizedBuyersOnly",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "sellOrdersUSDCLength",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_address",
+						"type": "address"
+					},
+					{
+						"internalType": "bool",
+						"name": "_status",
+						"type": "bool"
+					}
+				],
+				"name": "setAuthorizedAddress",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_USDCAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_nickeliumAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_adminControl",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_centralAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_escrowHandler",
+						"type": "address"
+					}
+				],
+				"name": "setContracts",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "setOwner",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "unpause",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"errors": {
+				"ReentrancyGuardReentrantCall()": [
+					{
+						"details": "Unauthorized reentrant call."
+					}
+				]
+			},
+			"events": {
+				"Paused(address)": {
+					"details": "Emitted when the pause is triggered by `account`."
+				},
+				"Unpaused(address)": {
+					"details": "Emitted when the pause is lifted by `account`."
+				}
+			},
+			"kind": "dev",
+			"methods": {
+				"paused()": {
+					"details": "Returns true if the contract is paused, and false otherwise."
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/USDCorders_flattened.sol": "USDCorders"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 50
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/USDCorders_flattened.sol": {
+			"keccak256": "0x60e489cf63206b2543bfef71eec3357b2b21a158d3f1f80aa79cb27118493202",
+			"license": "Custom-License",
+			"urls": [
+				"bzz-raw://0882e02ae47b90e0b33bf79faeaa3d957810182f6e780cf37625f9c2cde19ba8",
+				"dweb:/ipfs/QmeZBvh6yo57bVxxWLJEEEv1zHGruS7ipq1TrpXQgwUAPV"
+			]
+		}
+	},
+	"version": 1
+}

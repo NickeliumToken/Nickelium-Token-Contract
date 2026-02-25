@@ -1,0 +1,89 @@
+{
+	"deploy": {
+		"VM:-": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"main:1": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"ropsten:3": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"rinkeby:4": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"kovan:42": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"goerli:5": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"Custom": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		}
+	},
+	"data": {
+		"bytecode": {
+			"functionDebugData": {},
+			"generatedSources": [],
+			"linkReferences": {},
+			"object": "60556032600b8282823980515f1a607314602657634e487b7160e01b5f525f60045260245ffd5b305f52607381538281f3fe730000000000000000000000000000000000000000301460806040525f5ffdfea2646970667358221220fc9602ce253b79fcd60bad68c77647651442c566180c45b770966819bf3ed89b64736f6c634300081e0033",
+			"opcodes": "PUSH1 0x55 PUSH1 0x32 PUSH1 0xB DUP3 DUP3 DUP3 CODECOPY DUP1 MLOAD PUSH0 BYTE PUSH1 0x73 EQ PUSH1 0x26 JUMPI PUSH4 0x4E487B71 PUSH1 0xE0 SHL PUSH0 MSTORE PUSH0 PUSH1 0x4 MSTORE PUSH1 0x24 PUSH0 REVERT JUMPDEST ADDRESS PUSH0 MSTORE PUSH1 0x73 DUP2 MSTORE8 DUP3 DUP2 RETURN INVALID PUSH20 0x0 ADDRESS EQ PUSH1 0x80 PUSH1 0x40 MSTORE PUSH0 PUSH0 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0xFC SWAP7 MUL 0xCE 0x25 EXTCODESIZE PUSH26 0xFCD60BAD68C77647651442C566180C45B770966819BF3ED89B64 PUSH20 0x6F6C634300081E00330000000000000000000000 ",
+			"sourceMap": "1062:24871:0:-:0;;;;;;;;;;;;;;;-1:-1:-1;;;1062:24871:0;;;;;;;;;;;;;;;;;"
+		},
+		"deployedBytecode": {
+			"functionDebugData": {},
+			"generatedSources": [],
+			"immutableReferences": {},
+			"linkReferences": {},
+			"object": "730000000000000000000000000000000000000000301460806040525f5ffdfea2646970667358221220fc9602ce253b79fcd60bad68c77647651442c566180c45b770966819bf3ed89b64736f6c634300081e0033",
+			"opcodes": "PUSH20 0x0 ADDRESS EQ PUSH1 0x80 PUSH1 0x40 MSTORE PUSH0 PUSH0 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0xFC SWAP7 MUL 0xCE 0x25 EXTCODESIZE PUSH26 0xFCD60BAD68C77647651442C566180C45B770966819BF3ED89B64 PUSH20 0x6F6C634300081E00330000000000000000000000 ",
+			"sourceMap": "1062:24871:0:-:0;;;;;;;;"
+		},
+		"gasEstimates": {
+			"creation": {
+				"codeDepositCost": "17000",
+				"executionCost": "96",
+				"totalCost": "17096"
+			},
+			"internal": {
+				"abs(int128)": "infinite",
+				"add(int128,int128)": "infinite",
+				"avg(int128,int128)": "infinite",
+				"div(int128,int128)": "infinite",
+				"divi(int256,int256)": "infinite",
+				"divu(uint256,uint256)": "infinite",
+				"divuu(uint256,uint256)": "infinite",
+				"exp(int128)": "infinite",
+				"exp_2(int128)": "infinite",
+				"from128x128(int256)": "infinite",
+				"fromInt(int256)": "infinite",
+				"fromUInt(uint256)": "infinite",
+				"gavg(int128,int128)": "infinite",
+				"inv(int128)": "infinite",
+				"ln(int128)": "infinite",
+				"log_2(int128)": "infinite",
+				"mul(int128,int128)": "infinite",
+				"muli(int128,int256)": "infinite",
+				"mulu(int128,uint256)": "infinite",
+				"neg(int128)": "infinite",
+				"pow(int128,uint256)": "infinite",
+				"sqrt(int128)": "infinite",
+				"sqrtu(uint256)": "infinite",
+				"sub(int128,int128)": "infinite",
+				"to128x128(int128)": "infinite",
+				"toInt(int128)": "infinite",
+				"toUInt(int128)": "infinite"
+			}
+		},
+		"methodIdentifiers": {}
+	},
+	"abi": []
+}

@@ -1,0 +1,1 @@
+Please if you find any vulnerability or bug , send message detailed info to development@nickelium.com . Many thanks !
