@@ -1,0 +1,620 @@
+{
+	"id": "406f70eaf3ee7e28337d3f7055aedc8a",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.26",
+	"solcLongVersion": "0.8.26+commit.8a97fa7a",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"contracts/IAdminControl.sol": {
+				"content": "/* SPDX-License-Identifier: Custom-License\r\n*This contract is property of Destrier LLC. You are granted permission to use all functions of this contract intended for users. \r\n*However, copying, modifying, or distributing the code is strictly prohibited without explicit permission from the author.\r\n*All rights reserved. Destrier LLC, registration number 20241316871 , Colorado , USA.*/\r\npragma solidity ^0.8.0;\r\n\r\ninterface IAdminControl {\r\n    function matchOrders() external;\r\n    function adminControl(address _user) external;\r\n    function userRemoveOrder(address sender, uint256 orderID) external; \r\n    function pause() external ;\r\n    function unpause() external;\r\n    function setContracts( address _escrowHandler, address _USDTAddress, address _nickeliumAddress, address _multisig, address _facade ) external;\r\n\r\n}"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": true,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			},
+			"remappings": []
+		}
+	},
+	"output": {
+		"contracts": {
+			"contracts/IAdminControl.sol": {
+				"IAdminControl": {
+					"abi": [
+						{
+							"inputs": [
+								{
+									"internalType": "address",
+									"name": "_user",
+									"type": "address"
+								}
+							],
+							"name": "adminControl",
+							"outputs": [],
+							"stateMutability": "nonpayable",
+							"type": "function"
+						},
+						{
+							"inputs": [],
+							"name": "matchOrders",
+							"outputs": [],
+							"stateMutability": "nonpayable",
+							"type": "function"
+						},
+						{
+							"inputs": [],
+							"name": "pause",
+							"outputs": [],
+							"stateMutability": "nonpayable",
+							"type": "function"
+						},
+						{
+							"inputs": [
+								{
+									"internalType": "address",
+									"name": "_escrowHandler",
+									"type": "address"
+								},
+								{
+									"internalType": "address",
+									"name": "_USDTAddress",
+									"type": "address"
+								},
+								{
+									"internalType": "address",
+									"name": "_nickeliumAddress",
+									"type": "address"
+								},
+								{
+									"internalType": "address",
+									"name": "_multisig",
+									"type": "address"
+								},
+								{
+									"internalType": "address",
+									"name": "_facade",
+									"type": "address"
+								}
+							],
+							"name": "setContracts",
+							"outputs": [],
+							"stateMutability": "nonpayable",
+							"type": "function"
+						},
+						{
+							"inputs": [],
+							"name": "unpause",
+							"outputs": [],
+							"stateMutability": "nonpayable",
+							"type": "function"
+						},
+						{
+							"inputs": [
+								{
+									"internalType": "address",
+									"name": "sender",
+									"type": "address"
+								},
+								{
+									"internalType": "uint256",
+									"name": "orderID",
+									"type": "uint256"
+								}
+							],
+							"name": "userRemoveOrder",
+							"outputs": [],
+							"stateMutability": "nonpayable",
+							"type": "function"
+						}
+					],
+					"devdoc": {
+						"kind": "dev",
+						"methods": {},
+						"version": 1
+					},
+					"evm": {
+						"assembly": "",
+						"bytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"linkReferences": {},
+							"object": "",
+							"opcodes": "",
+							"sourceMap": ""
+						},
+						"deployedBytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"immutableReferences": {},
+							"linkReferences": {},
+							"object": "",
+							"opcodes": "",
+							"sourceMap": ""
+						},
+						"gasEstimates": null,
+						"legacyAssembly": null,
+						"methodIdentifiers": {
+							"adminControl(address)": "33bf3577",
+							"matchOrders()": "7ee68546",
+							"pause()": "8456cb59",
+							"setContracts(address,address,address,address,address)": "f63bf8bd",
+							"unpause()": "3f4ba83a",
+							"userRemoveOrder(address,uint256)": "a24e5b46"
+						}
+					},
+					"metadata": "{\"compiler\":{\"version\":\"0.8.26+commit.8a97fa7a\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_user\",\"type\":\"address\"}],\"name\":\"adminControl\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"matchOrders\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"pause\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_escrowHandler\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"_USDTAddress\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"_nickeliumAddress\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"_multisig\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"_facade\",\"type\":\"address\"}],\"name\":\"setContracts\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"unpause\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"sender\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"orderID\",\"type\":\"uint256\"}],\"name\":\"userRemoveOrder\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/IAdminControl.sol\":\"IAdminControl\"},\"evmVersion\":\"cancun\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/IAdminControl.sol\":{\"keccak256\":\"0x16ae8ff409473c8ec939c09578f36b27a87c329385ba6af75de61752024b944e\",\"license\":\"Custom-License\",\"urls\":[\"bzz-raw://c96c3434a9c7d72b3ede355266e263fa8a01cf0dd16f49cdeec0536019fd00d8\",\"dweb:/ipfs/QmS2JZD2NCkgCwxiKyVa1cdKUBnA6WtA2dCmQBGkKmusMY\"]}},\"version\":1}",
+					"storageLayout": {
+						"storage": [],
+						"types": null
+					},
+					"userdoc": {
+						"kind": "user",
+						"methods": {},
+						"version": 1
+					}
+				}
+			}
+		},
+		"sources": {
+			"contracts/IAdminControl.sol": {
+				"ast": {
+					"absolutePath": "contracts/IAdminControl.sol",
+					"exportedSymbols": {
+						"IAdminControl": [
+							36
+						]
+					},
+					"id": 37,
+					"license": "Custom-License",
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								"^",
+								"0.8",
+								".0"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "388:23:0"
+						},
+						{
+							"abstract": false,
+							"baseContracts": [],
+							"canonicalName": "IAdminControl",
+							"contractDependencies": [],
+							"contractKind": "interface",
+							"fullyImplemented": false,
+							"id": 36,
+							"linearizedBaseContracts": [
+								36
+							],
+							"name": "IAdminControl",
+							"nameLocation": "425:13:0",
+							"nodeType": "ContractDefinition",
+							"nodes": [
+								{
+									"functionSelector": "7ee68546",
+									"id": 4,
+									"implemented": false,
+									"kind": "function",
+									"modifiers": [],
+									"name": "matchOrders",
+									"nameLocation": "455:11:0",
+									"nodeType": "FunctionDefinition",
+									"parameters": {
+										"id": 2,
+										"nodeType": "ParameterList",
+										"parameters": [],
+										"src": "466:2:0"
+									},
+									"returnParameters": {
+										"id": 3,
+										"nodeType": "ParameterList",
+										"parameters": [],
+										"src": "477:0:0"
+									},
+									"scope": 36,
+									"src": "446:32:0",
+									"stateMutability": "nonpayable",
+									"virtual": false,
+									"visibility": "external"
+								},
+								{
+									"functionSelector": "33bf3577",
+									"id": 9,
+									"implemented": false,
+									"kind": "function",
+									"modifiers": [],
+									"name": "adminControl",
+									"nameLocation": "493:12:0",
+									"nodeType": "FunctionDefinition",
+									"parameters": {
+										"id": 7,
+										"nodeType": "ParameterList",
+										"parameters": [
+											{
+												"constant": false,
+												"id": 6,
+												"mutability": "mutable",
+												"name": "_user",
+												"nameLocation": "514:5:0",
+												"nodeType": "VariableDeclaration",
+												"scope": 9,
+												"src": "506:13:0",
+												"stateVariable": false,
+												"storageLocation": "default",
+												"typeDescriptions": {
+													"typeIdentifier": "t_address",
+													"typeString": "address"
+												},
+												"typeName": {
+													"id": 5,
+													"name": "address",
+													"nodeType": "ElementaryTypeName",
+													"src": "506:7:0",
+													"stateMutability": "nonpayable",
+													"typeDescriptions": {
+														"typeIdentifier": "t_address",
+														"typeString": "address"
+													}
+												},
+												"visibility": "internal"
+											}
+										],
+										"src": "505:15:0"
+									},
+									"returnParameters": {
+										"id": 8,
+										"nodeType": "ParameterList",
+										"parameters": [],
+										"src": "529:0:0"
+									},
+									"scope": 36,
+									"src": "484:46:0",
+									"stateMutability": "nonpayable",
+									"virtual": false,
+									"visibility": "external"
+								},
+								{
+									"functionSelector": "a24e5b46",
+									"id": 16,
+									"implemented": false,
+									"kind": "function",
+									"modifiers": [],
+									"name": "userRemoveOrder",
+									"nameLocation": "545:15:0",
+									"nodeType": "FunctionDefinition",
+									"parameters": {
+										"id": 14,
+										"nodeType": "ParameterList",
+										"parameters": [
+											{
+												"constant": false,
+												"id": 11,
+												"mutability": "mutable",
+												"name": "sender",
+												"nameLocation": "569:6:0",
+												"nodeType": "VariableDeclaration",
+												"scope": 16,
+												"src": "561:14:0",
+												"stateVariable": false,
+												"storageLocation": "default",
+												"typeDescriptions": {
+													"typeIdentifier": "t_address",
+													"typeString": "address"
+												},
+												"typeName": {
+													"id": 10,
+													"name": "address",
+													"nodeType": "ElementaryTypeName",
+													"src": "561:7:0",
+													"stateMutability": "nonpayable",
+													"typeDescriptions": {
+														"typeIdentifier": "t_address",
+														"typeString": "address"
+													}
+												},
+												"visibility": "internal"
+											},
+											{
+												"constant": false,
+												"id": 13,
+												"mutability": "mutable",
+												"name": "orderID",
+												"nameLocation": "585:7:0",
+												"nodeType": "VariableDeclaration",
+												"scope": 16,
+												"src": "577:15:0",
+												"stateVariable": false,
+												"storageLocation": "default",
+												"typeDescriptions": {
+													"typeIdentifier": "t_uint256",
+													"typeString": "uint256"
+												},
+												"typeName": {
+													"id": 12,
+													"name": "uint256",
+													"nodeType": "ElementaryTypeName",
+													"src": "577:7:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_uint256",
+														"typeString": "uint256"
+													}
+												},
+												"visibility": "internal"
+											}
+										],
+										"src": "560:33:0"
+									},
+									"returnParameters": {
+										"id": 15,
+										"nodeType": "ParameterList",
+										"parameters": [],
+										"src": "602:0:0"
+									},
+									"scope": 36,
+									"src": "536:67:0",
+									"stateMutability": "nonpayable",
+									"virtual": false,
+									"visibility": "external"
+								},
+								{
+									"functionSelector": "8456cb59",
+									"id": 19,
+									"implemented": false,
+									"kind": "function",
+									"modifiers": [],
+									"name": "pause",
+									"nameLocation": "619:5:0",
+									"nodeType": "FunctionDefinition",
+									"parameters": {
+										"id": 17,
+										"nodeType": "ParameterList",
+										"parameters": [],
+										"src": "624:2:0"
+									},
+									"returnParameters": {
+										"id": 18,
+										"nodeType": "ParameterList",
+										"parameters": [],
+										"src": "636:0:0"
+									},
+									"scope": 36,
+									"src": "610:27:0",
+									"stateMutability": "nonpayable",
+									"virtual": false,
+									"visibility": "external"
+								},
+								{
+									"functionSelector": "3f4ba83a",
+									"id": 22,
+									"implemented": false,
+									"kind": "function",
+									"modifiers": [],
+									"name": "unpause",
+									"nameLocation": "652:7:0",
+									"nodeType": "FunctionDefinition",
+									"parameters": {
+										"id": 20,
+										"nodeType": "ParameterList",
+										"parameters": [],
+										"src": "659:2:0"
+									},
+									"returnParameters": {
+										"id": 21,
+										"nodeType": "ParameterList",
+										"parameters": [],
+										"src": "670:0:0"
+									},
+									"scope": 36,
+									"src": "643:28:0",
+									"stateMutability": "nonpayable",
+									"virtual": false,
+									"visibility": "external"
+								},
+								{
+									"functionSelector": "f63bf8bd",
+									"id": 35,
+									"implemented": false,
+									"kind": "function",
+									"modifiers": [],
+									"name": "setContracts",
+									"nameLocation": "686:12:0",
+									"nodeType": "FunctionDefinition",
+									"parameters": {
+										"id": 33,
+										"nodeType": "ParameterList",
+										"parameters": [
+											{
+												"constant": false,
+												"id": 24,
+												"mutability": "mutable",
+												"name": "_escrowHandler",
+												"nameLocation": "708:14:0",
+												"nodeType": "VariableDeclaration",
+												"scope": 35,
+												"src": "700:22:0",
+												"stateVariable": false,
+												"storageLocation": "default",
+												"typeDescriptions": {
+													"typeIdentifier": "t_address",
+													"typeString": "address"
+												},
+												"typeName": {
+													"id": 23,
+													"name": "address",
+													"nodeType": "ElementaryTypeName",
+													"src": "700:7:0",
+													"stateMutability": "nonpayable",
+													"typeDescriptions": {
+														"typeIdentifier": "t_address",
+														"typeString": "address"
+													}
+												},
+												"visibility": "internal"
+											},
+											{
+												"constant": false,
+												"id": 26,
+												"mutability": "mutable",
+												"name": "_USDTAddress",
+												"nameLocation": "732:12:0",
+												"nodeType": "VariableDeclaration",
+												"scope": 35,
+												"src": "724:20:0",
+												"stateVariable": false,
+												"storageLocation": "default",
+												"typeDescriptions": {
+													"typeIdentifier": "t_address",
+													"typeString": "address"
+												},
+												"typeName": {
+													"id": 25,
+													"name": "address",
+													"nodeType": "ElementaryTypeName",
+													"src": "724:7:0",
+													"stateMutability": "nonpayable",
+													"typeDescriptions": {
+														"typeIdentifier": "t_address",
+														"typeString": "address"
+													}
+												},
+												"visibility": "internal"
+											},
+											{
+												"constant": false,
+												"id": 28,
+												"mutability": "mutable",
+												"name": "_nickeliumAddress",
+												"nameLocation": "754:17:0",
+												"nodeType": "VariableDeclaration",
+												"scope": 35,
+												"src": "746:25:0",
+												"stateVariable": false,
+												"storageLocation": "default",
+												"typeDescriptions": {
+													"typeIdentifier": "t_address",
+													"typeString": "address"
+												},
+												"typeName": {
+													"id": 27,
+													"name": "address",
+													"nodeType": "ElementaryTypeName",
+													"src": "746:7:0",
+													"stateMutability": "nonpayable",
+													"typeDescriptions": {
+														"typeIdentifier": "t_address",
+														"typeString": "address"
+													}
+												},
+												"visibility": "internal"
+											},
+											{
+												"constant": false,
+												"id": 30,
+												"mutability": "mutable",
+												"name": "_multisig",
+												"nameLocation": "781:9:0",
+												"nodeType": "VariableDeclaration",
+												"scope": 35,
+												"src": "773:17:0",
+												"stateVariable": false,
+												"storageLocation": "default",
+												"typeDescriptions": {
+													"typeIdentifier": "t_address",
+													"typeString": "address"
+												},
+												"typeName": {
+													"id": 29,
+													"name": "address",
+													"nodeType": "ElementaryTypeName",
+													"src": "773:7:0",
+													"stateMutability": "nonpayable",
+													"typeDescriptions": {
+														"typeIdentifier": "t_address",
+														"typeString": "address"
+													}
+												},
+												"visibility": "internal"
+											},
+											{
+												"constant": false,
+												"id": 32,
+												"mutability": "mutable",
+												"name": "_facade",
+												"nameLocation": "800:7:0",
+												"nodeType": "VariableDeclaration",
+												"scope": 35,
+												"src": "792:15:0",
+												"stateVariable": false,
+												"storageLocation": "default",
+												"typeDescriptions": {
+													"typeIdentifier": "t_address",
+													"typeString": "address"
+												},
+												"typeName": {
+													"id": 31,
+													"name": "address",
+													"nodeType": "ElementaryTypeName",
+													"src": "792:7:0",
+													"stateMutability": "nonpayable",
+													"typeDescriptions": {
+														"typeIdentifier": "t_address",
+														"typeString": "address"
+													}
+												},
+												"visibility": "internal"
+											}
+										],
+										"src": "698:111:0"
+									},
+									"returnParameters": {
+										"id": 34,
+										"nodeType": "ParameterList",
+										"parameters": [],
+										"src": "818:0:0"
+									},
+									"scope": 36,
+									"src": "677:142:0",
+									"stateMutability": "nonpayable",
+									"virtual": false,
+									"visibility": "external"
+								}
+							],
+							"scope": 37,
+							"src": "415:409:0",
+							"usedErrors": [],
+							"usedEvents": []
+						}
+					],
+					"src": "388:436:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}

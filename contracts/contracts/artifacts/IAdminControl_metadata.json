@@ -1,0 +1,131 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_user",
+						"type": "address"
+					}
+				],
+				"name": "adminControl",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "matchOrders",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "pause",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_escrowHandler",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_USDTAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_nickeliumAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_multisig",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_facade",
+						"type": "address"
+					}
+				],
+				"name": "setContracts",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "unpause",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "sender",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "orderID",
+						"type": "uint256"
+					}
+				],
+				"name": "userRemoveOrder",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/USDTorders_flattened.sol": "IAdminControl"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 50
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/USDTorders_flattened.sol": {
+			"keccak256": "0x7c98d5ca688ee7b653896c11b5e9f087e54850e136f074e944d63a4bc2a35c5c",
+			"license": "Custom-License",
+			"urls": [
+				"bzz-raw://0857458cb38aa8e92b5f46328730a72d14cb62410b7d75d28b5550dfea59a662",
+				"dweb:/ipfs/QmUJmTCERdUyxGm6XwCHpFzw9G3S2rHtCirPk1tm8GEvk1"
+			]
+		}
+	},
+	"version": 1
+}

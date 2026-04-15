@@ -1,0 +1,70 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "bytes4",
+						"name": "interfaceId",
+						"type": "bytes4"
+					}
+				],
+				"name": "supportsInterface",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"details": "Interface of the ERC-165 standard, as defined in the https://eips.ethereum.org/EIPS/eip-165[ERC]. Implementers can declare support of contract interfaces, which can then be queried by others ({ERC165Checker}). For an implementation, see {ERC165}.",
+			"kind": "dev",
+			"methods": {
+				"supportsInterface(bytes4)": {
+					"details": "Returns true if this contract implements the interface defined by `interfaceId`. See the corresponding https://eips.ethereum.org/EIPS/eip-165#how-interfaces-are-identified[ERC section] to learn more about how these ids are created. This function call must use less than 30 000 gas."
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Mine-5_flattened.sol": "IERC165"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 50
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Mine-5_flattened.sol": {
+			"keccak256": "0x7b8c35c6b6fcd566020c99af16d6e95e866e7f9dc3a414e6521663c2b030b9a1",
+			"license": "Custom-License",
+			"urls": [
+				"bzz-raw://b6f627831b03639e4a5b70c8291060a74114dca0fffcf82a36d58670f14b30cd",
+				"dweb:/ipfs/QmVu4eippZABBMx6GVM2X2vE8yBksWwpurJT8egt2L5LwQ"
+			]
+		}
+	},
+	"version": 1
+}

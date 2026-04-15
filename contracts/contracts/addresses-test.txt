@@ -1,0 +1,207 @@
+adminControl 0xBc45c34fA3Eb75589fF3455Bd2d9410464205041
+balances 0x0ce1B92cC4baBe2cc6c28e307B563b1336D3E985
+central 0xDA0bab807633f07f013f94DD0E6A4F96F8742B53
+multisig 0x6C28e091218e093760Af40c10e66BB8393De5194
+support multisig 0xaba9cB0Bb530eadE5d4ef41c463403e0604c18f9
+escrowHandler 0xd2a5bC10698FD955D1Fe6cb468a17809A08fd005
+USDCaddress 0xddaAd340b0f1Ef65169Ae5E41A8b10776a75482d
+USDTaddress  0x0fC5025C764cE34df352757e82f7B5c4Df39A836
+Nickelium 0x11016F1F38de7b18bA5E67311693aEf3F31BaF3F
+OrderRouter 0xcD6a42782d230D7c13A74ddec5dD140e55499Df9
+USDCorders 0xaE036c65C649172b43ef7156b009c6221B596B8b
+USDTorders 0x9d83e140330758a8fFD07F8Bd73e86ebcA8a5692
+MINE1  0x1839ca61c5788CAe2cDE81a0259F8b03faaCE03a
+MINE2  0xBF800518F6bE5310F0e8E6Fa0EF9F9443d68BcDd
+MINE3  0xFb1bc496e13D4a090fE68dE1Dfb663827668Ef20
+MINE4  0x97A745cb545C68FEF31c1f3D30da343cB922bb0a
+MINE5  0x493d21ce4bD12AF5b022825B84E3343aD86e8a56
+  true
+
+AdminControl at 0xBc4...05041
+Central at 0x182...4695B
+CustomMultisigSupport at 0xEF8...D3d7c
+EscrowHandler at 0x66d...4A205
+MockUSDC at 0xC56...6B9e7
+MockUSDT at 0x647...DC9fc
+Nickelium at 0x79D...11274
+OrderRouter at 0xa08...37016
+USDCorders at 0x950...bE37f
+USDTorders at 0x664...5039d
+Balances at 0x0ce...3E985
+Nickelium at 0x110...BaF3F
+CustomMultisig at 0x6C2...e5194
+CustomMultisigSupport at 0xaba...c18f9
+Mine1_NFT at 0x183...CE03a
+Mine2_NFT at 0xBF8...8BcDd
+Mine3_NFT at 0xFb1...8Ef20
+Mine4_NFT at 0x97A...2bb0a
+Mine5_NFT at 0x493...e8a56
+
+SEPOLLA 1
+admin control  0xDECD2b6eF800276c3Eb08391CB8C3D437A55A581
+Central  0xd61A55b33F01cAca5fDf53CBccb1D475ADD6905A
+multisig  0xbF0b6446Bc50bBe631309dC4CabCb9b6c4b79ABA
+          0x03Ec54a98dc4442034013CD8D029425B5891851e
+EscrowHandler  0x8562A6a70dFC0bB14Ca7b5E9fF55A159B6b2c0E1
+MockUSDC  0x1c7D4B196Cb0C7B01d743Fbc6116a902379C7238
+         mock 0x1b2caEF73B13a81cca3297771a13a7054564b67d
+MockUSDT  0x7169D38820dfd117C3FA1f22a697dBA58d90BA06
+         mock 0x5A9b11ea02a2E769Ad237877Cd4B72053719C969
+Tether 0xf35C79Ef9C677e2ecA335D0798bdcDbfa07fAf47
+Nickelium  0x651C2c0188C9534671e7a4cE0CD7100309fa3B3B
+           0x0344aAC89eb47B9AEc9e894aCDe2AE844443054a
+0x472992670dEeE47B2BFAd5C42C72D13a5FD82E1a
+OrderRouter  0x9D91cc6046A381b5b108Cb8f20de505151399cfa
+USDCorders  0x3a0bf5C87615763FB6aFD6f082C87008cCb2594a
+USDTorders  0xdCc5f6f838aEAbD28826a5307aC8b21eB6dA168E
+Balances  0x998032D95082b05983D3CC56Ec95A2673451069a
+CustomMultisigSupport  0x0f9aeE2ac27e3eE24f4b171a8dD2871152134f2E
+Mine1_NFT  0x3728a842dA5bBF4fB9eb9d4AA9b85bEc2e881c26
+Mine2_NFT  0xC1d9f0BD6B175118d4A0ad4299d69DB5074F0911
+Mine3_NFT  0xe2680Dea1914D921943F620Ad8dED88940739cf6
+Mine4_NFT  0xcF7b8d43df1C62Ac4209749fb58E294c90f7985B
+Mine5_NFT  0xBFEcF6fFDe48906b498bff1B8702de7F3A040da8
+----------------------------------------------------------------
+SEPOLIA 2
+admin control  0x324F17B007B7DE0a5c83F848f46EF9A1BAFF1Ba6 stelni multisig
+Balances 0xa775448F54DFdC4785603346f76aC3091603bbc4
+Central  0x4Dd0Bcc3AEF7d754850FA16f89A614f065A59175  stelni balances multisig
+multisig  0x0eb54f0E4c6Baa3Ba87365649cb5718E699B2545 stelni orderRouter mines
+EscrowHandler  0x6430F1b7E59FEa9A429326eE95560f8e0Fee2508
+MockUSDC  0x1c7D4B196Cb0C7B01d743Fbc6116a902379C7238
+         mock 0x1b2caEF73B13a81cca3297771a13a7054564b67d
+         mock 0x8df0bc9A257DE6A2c7748e126434fC88260C5525
+Tether 0xf35C79Ef9C677e2ecA335D0798bdcDbfa07fAf47
+Nickelium  0x6614b4ce71DabEDf1dAeb2Dfb5e007aC7B85Dc86  stelni balances mines
+OrderRouter  0x3470DAf5cd1FF7384082A525EDfEe1fcD841C4D8
+USDCorders  0x96930bB88ca6d7073C42C896727105e942bd1Cbc
+USDTorders  0xE52Fba164d95026BCc26DE447Eba033903856b2B
+CustomMultisigSupport  0x9428844E23dcd08bdC92eEBE4eFAD99b78196344 stelni mines
+Mine1_NFT  0x37C1375942662006385101634bf67F4E34b5658F
+Mine2_NFT  0xb7fD0d61B593c04B0d5edB5e2C7c49F69a552aE9
+Mine3_NFT  0x7b6E7749f212C5e781EF0D9726C7a81F493C9f55
+Mine4_NFT  0xB1e9da86861bDb3dFD921B3885f07d5c0AF1fEce
+Mine5_NFT  0xe86dfAE75D4FFe98CA1d49A012CE34586d5010b1
+----------------------------------------------------------------------
+
+Sepolia 3
+multisig 0xA9718f1747b7653576Be1489E916407fDb0E9BA9 diorthothike to display orders
+multisig 0x1F34Eee184EB1d85041945fdCC09EF5AAf503B91 xoris kena
+multisig 0x80Efa5B0C49719560F380581D50aE1b37041fe9D fix display order kai gia 0 index
+multisig 0x72a607221De100A10B93399408a45b19d4F50573
+multisig 0xead25b7777A46E0f4A66EcbD80352CeBf62a630a fix check for index length for order id
+multisig 0x1a64C65b1C859603fd44224e0Ec5ea810Eb73F9f fix use counter for transfer id exi lathos sto ncl counter
+multisig 0xef3C4De560bCef967D4Fe568bb1ceC0Fdbf1ec07 fix use counter for transfer id
+support-multisig  0x9D0BC122182e9b6c1d44e25A4a95259e53153D49 fix use counter for transfer id
+nickelium 0x7856b9892827A7ff0ac63DA320Cf6B9DAEB1c209  fix event for current lme price on transfers
+central 0xcB4E28568876D8CFcE80E378D0B5eB153cc615a0 fix counter protect with onlyAuthorized
+escrow 0x67640927C22418bF4bbbde3AA87D153abFA32fAE fix matchNeworderEther
+USDCorders  0xC8BC86CE3b2FEFD2e74389F16eEa0ba002C75204 fix matchNeworderUSDC
+USDTorders  0x4e5816C9ce82992f6C98617EeE7763D094edE336 fix matchNeworderUSDT
+--------------------------------------------------------
+
+Sepolia 3 together
+
+admin control  0x324F17B007B7DE0a5c83F848f46EF9A1BAFF1Ba6 stelni multisig lamvani 2 multisig nickelium central escrow usdcOrders usdtOrders
+Balances 0xa775448F54DFdC4785603346f76aC3091603bbc4 lamvani nickelium central
+Central  0xcB4E28568876D8CFcE80E378D0B5eB153cc615a0  stelni balances multisig lamvani 2 multisig nickelium escrow admin usdcOrders usdtOrders 5 mines
+multisig  0xef3C4De560bCef967D4Fe568bb1ceC0Fdbf1ec07 stelni orderRouter mines
+escrow 0x67640927C22418bF4bbbde3AA87D153abFA32fAE fix matchNeworderEther lamvani 2 multisig nickelium central admin orderRouter usdcOrders usdtOrders 
+MockUSDC 0x8df0bc9A257DE6A2c7748e126434fC88260C5525
+Tether 0xf35C79Ef9C677e2ecA335D0798bdcDbfa07fAf47
+nickelium 0x7856b9892827A7ff0ac63DA320Cf6B9DAEB1c209  stelni balances mines  lamvani apo 2 multisig central escrow admincontrol usdcOrders usdtOrders 5 mines
+OrderRouter  0x3470DAf5cd1FF7384082A525EDfEe1fcD841C4D8 lamvani 1 multisig 
+USDCorders  0xC8BC86CE3b2FEFD2e74389F16eEa0ba002C75204 lamvani Nickelium central admin orderRouter 
+USDTorders  0x4e5816C9ce82992f6C98617EeE7763D094edE336 lamvani Nickelium central admin orderRouter
+CustomMultisigSupport  0x9D0BC122182e9b6c1d44e25A4a95259e53153D49 stelni mines
+Mine1_NFT  0x37C1375942662006385101634bf67F4E34b5658F lamvani 2 multisig Nickelium 
+Mine2_NFT  0xb7fD0d61B593c04B0d5edB5e2C7c49F69a552aE9 lamvani 2 multisig Nickelium
+Mine3_NFT  0x7b6E7749f212C5e781EF0D9726C7a81F493C9f55 lamvani 2 multisig Nickelium
+Mine4_NFT  0xB1e9da86861bDb3dFD921B3885f07d5c0AF1fEce lamvani 2 multisig Nickelium
+Mine5_NFT  0xe86dfAE75D4FFe98CA1d49A012CE34586d5010b1 lamvani 2 multisig Nickelium
+
+--------------------------------------------------------------------------------
+
+Sepolia 4 together
+
+admin control  0x8Dfa9467Bd6EF1F3B37e88399EbcE0E1ab3D0097 lamvani 2 multisig nickelium central escrow usdcOrders usdtOrders
+Balances 0x7AdDA7CeC0F068c1632C4709c86d46C054c6DFC0 lamvani nickelium central
+Central  0x267bEb40ef068b0D36Fa78317473823c13a75710  lamvani 2 multisig nickelium escrow admin usdcOrders usdtOrders 5 mines
+multisig  0xfE696C53440D6bcFf9e6Dd7cB81455BA0b83E8c7 lamvani admin central 
+escrow 0x396eB5eB83DF8bB8C80256844245199350467d15 lamvani 2 multisig nickelium central admin orderRouter usdcOrders usdtOrders 
+MockUSDC 0x8df0bc9A257DE6A2c7748e126434fC88260C5525
+Tether 0xf35C79Ef9C677e2ecA335D0798bdcDbfa07fAf47
+nickelium 0x712C8702B1069036b23C72A69eD5D1E4C2a49897  lamvani apo 2 multisig central escrow admincontrol usdcOrders usdtOrders 5 mines
+OrderRouter  0x8060d64Aa1194Aa86d8F15EC1D490A00EEfAEa59 lamvani 1 multisig 
+USDCorders  0x72D362f34F29dF7f969219A536102c494d75f6aB lamvani Nickelium central admin orderRouter 
+USDTorders  0x995Bbd3D8e3A1fC8FB776a8f6bEC4ed364d65Bf1 lamvani Nickelium central admin orderRouter
+CustomMultisigSupport  0xD3639C9BAF2CCdbBFfd21Bfb418F14d1c1E4A7fB 
+Mine1_NFT  0xb7E1Ea4F75e67d427301d7066f36189ABaB88e81 lamvani 2 multisig Nickelium 
+Mine2_NFT  0x3e38e72119CB7ad58bef014D28be1965959B8080 lamvani 2 multisig Nickelium
+Mine3_NFT  0x37eD462b2bBfA8e4607EA781a601ae899ED34b6c lamvani 2 multisig Nickelium
+Mine4_NFT  0xa3f98F1FeefDf5297Fc998d00Ea10F07a80C586E lamvani 2 multisig Nickelium
+Mine5_NFT  0xC768590b524D06aDdf529B3Ce185405f03D849B1 lamvani 2 multisig Nickelium
+
+------------------------------------
+TOKEN SALE TEST SEPOLIA
+0x552a9217EB4D8d876b178F719d9f0D9ACab81048
+0x1971Dc4b9AEc53247162d184159c851Fd8eDE05F
+0xA6dB28e388CeE31f7Ee5D561E6963bfAE7d84dA3 
+0x7364D679451182B641A44F4c41999c3AF5ac7fD7 
+0xF9CfbB2112796C9ab791B9254bA98dC259c40404 latest
+
+----------------------------------------
+
+Sepolia 5
+
+// admin control  0xC3c0a626bd99980DFDFe44C38d294399E7a03b9D
+admin control 0x8B227C6F34ba90952353956F080b3329B63c2250   lamvani 2 multisig nickelium central escrow usdcOrders usdtOrders
+Balances   0x2b50A72E399bDB07aA60b0A992241D2Ab582da87       lamvani nickelium central
+Central   0x46708E85645e3463C135A6D6e20F438e549A43f5     lamvani 2 multisig nickelium escrow admin usdcOrders usdtOrders 5 mines
+multisig   0x2cBA8363179BfB83c47D4dCF0a364A09114a8edC     lamvani admin central 
+escrow    0xcc67B57d2711280d5863AcD22134D9b1ab1918C1     lamvani 2 multisig nickelium central admin orderRouter usdcOrders usdtOrders 
+MockUSDC 0x8df0bc9A257DE6A2c7748e126434fC88260C5525
+Tether 0xf35C79Ef9C677e2ecA335D0798bdcDbfa07fAf47
+nickelium   0x4Fd5b87e0aCEA8D6F8C344d3Bc548435aAdFeB9D   lamvani apo 2 multisig central escrow admincontrol usdcOrders usdtOrders 5 mines
+OrderRouter   0xE5A6E5410C7d6e306Fe6b9D11749A4320d155195      lamvani 1 multisig 
+USDCorders   0x7DCaE988Bf505835e8275f2987FA6C135269f136        lamvani Nickelium central admin orderRouter 
+USDTorders     0x3f0E5c1Ae49E1964A6F9f74AC32c546210cAe6e5       lamvani Nickelium central admin orderRouter
+CustomMultisigSupport  0xbBbf50e71A0461bA7C75D9B7ab057b730Dc1De0C
+Mine1_NFT    0x4Cf7dBbc21A4F918C488230f7dBc24AE35848D13      lamvani 2 multisig Nickelium 
+Mine2_NFT    0x6F7E751a1852e170285Eaf129b2aB5e18F1776e5      lamvani 2 multisig Nickelium
+Mine3_NFT    0x5508AaA63C63Eea345B1787E70B30B11b6CA4B54      lamvani 2 multisig Nickelium
+Mine4_NFT    0xd9EDe58ddB10fb9A581F09e0c25f7Dd1866Bc38B      lamvani 2 multisig Nickelium
+Mine5_NFT    0x39982e99050c180f63CEE8dF22B2564d9091a7Fc      lamvani 2 multisig Nickelium
+TokenSale  0x8175e89589F0F6a98256308Fe728b7Bf514CDd89
+
+
+Sepolia 6
+
+
+admin control 0x315f3EB780a3d1C6ca13eE3539268DF53Db78a55   lamvani 2 multisig nickelium central escrow usdcOrders usdtOrders
+Balances   0x18f19711e6547aed16a8f395Df6c78Ba31716d9e       lamvani nickelium central
+Central   0xd333553f01EbDF9016E4D07282F17Fbfe03A92b2     lamvani 2 multisig nickelium escrow admin usdcOrders usdtOrders 5 mines
+multisig   0xF24b0593fF746b3aF66029d8B9067E3b637BB72E     lamvani admin central 
+escrow    0x0e269dfd786DD8603472A2736A2953223c812ba6     lamvani 2 multisig nickelium central admin orderRouter usdcOrders usdtOrders 
+MockUSDC 0x8df0bc9A257DE6A2c7748e126434fC88260C5525
+Tether 0xf35C79Ef9C677e2ecA335D0798bdcDbfa07fAf47
+nickelium   0xD194F2Fb09B45F1A084fdF61deaA5BE236eAE37C   lamvani apo 2 multisig central escrow admincontrol usdcOrders usdtOrders 5 mines
+OrderRouter   0xA4fA2Ca10C7914220FdB44fD68c887d8981E2fE3      lamvani 1 multisig 
+USDCorders   0x173493d2331Cc7119013f408A01d02b9Af89E6e5        lamvani Nickelium central admin orderRouter 
+USDTorders     0x59D909C8C778f639eAdB185f67CEf491Cb1d6e0c       lamvani Nickelium central admin orderRouter
+CustomMultisigSupport  // 0xdbA97C4B2d2DC459Fba096b4D232bE302A8C8D7e
+CustomMultisigSupport   0x17bE283A88b475e861Ab98e9b0cA63d73d016558
+Mine1_NFT    0x127Fb6Ec64BdbC3c95d1d641c8a91E8D58C52F6c      lamvani 2 multisig Nickelium 
+Mine2_NFT    0x5598b6F2C1905513C94a032051764aBa54BabD58      lamvani 2 multisig Nickelium
+Mine3_NFT    0x132AE1aD77606979cAF720752887D3253E9443b5      lamvani 2 multisig Nickelium
+Mine4_NFT    0x3c6B2824F8F0Cde3E2A0BFF8aa0f17c6C7F92309      lamvani 2 multisig Nickelium
+Mine5_NFT    0x40dC37ad4Bb56fD3690Ff64f566e45EFe2FD25ba      lamvani 2 multisig Nickelium
+ProofOfReservesSummary  0x63eb04ADBDe6fe8C27bd1e09099A4363D6ad8ac9
+TokenSale    // 0x4e4F3D96B977AF83D4f3b685ad8638A556C911E1
+TokenSale    0xceD636B076B35ce366207EB312847E1700e8959b
+
+initialNo 15000
+
+
+
+

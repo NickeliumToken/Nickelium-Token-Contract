@@ -1,0 +1,90 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "length",
+						"type": "uint256"
+					}
+				],
+				"name": "StringsInsufficientHexLength",
+				"type": "error"
+			},
+			{
+				"inputs": [],
+				"name": "StringsInvalidAddressFormat",
+				"type": "error"
+			},
+			{
+				"inputs": [],
+				"name": "StringsInvalidChar",
+				"type": "error"
+			}
+		],
+		"devdoc": {
+			"details": "String operations.",
+			"errors": {
+				"StringsInsufficientHexLength(uint256,uint256)": [
+					{
+						"details": "The `value` string doesn't fit in the specified `length`."
+					}
+				],
+				"StringsInvalidAddressFormat()": [
+					{
+						"details": "The string being parsed is not a properly formatted address."
+					}
+				],
+				"StringsInvalidChar()": [
+					{
+						"details": "The string being parsed contains characters that are not in scope of the given base."
+					}
+				]
+			},
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Mine-5_flattened.sol": "Strings"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 50
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Mine-5_flattened.sol": {
+			"keccak256": "0x7b8c35c6b6fcd566020c99af16d6e95e866e7f9dc3a414e6521663c2b030b9a1",
+			"license": "Custom-License",
+			"urls": [
+				"bzz-raw://b6f627831b03639e4a5b70c8291060a74114dca0fffcf82a36d58670f14b30cd",
+				"dweb:/ipfs/QmVu4eippZABBMx6GVM2X2vE8yBksWwpurJT8egt2L5LwQ"
+			]
+		}
+	},
+	"version": 1
+}

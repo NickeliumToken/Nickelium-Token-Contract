@@ -1,0 +1,1547 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "ReentrancyGuardReentrantCall",
+				"type": "error"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "sender",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "EtherReceived",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "Paused",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "Unpaused",
+				"type": "event"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "fallback"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_orderID",
+						"type": "uint256"
+					}
+				],
+				"name": "CancelConfirmTransfer",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_price",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "CreateBuyOrderEther",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_price",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "CreateBuyOrderUSDC",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_price",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "CreateBuyOrderUSDT",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_price",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "_authorizedBuyersOnly",
+						"type": "bool"
+					}
+				],
+				"name": "CreateSellOrderEther",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_price",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "_authorizedBuyersOnly",
+						"type": "bool"
+					}
+				],
+				"name": "CreateSellOrderUSDC",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_price",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "_authorizedBuyersOnly",
+						"type": "bool"
+					}
+				],
+				"name": "CreateSellOrderUSDT",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "DisplayAllOrders",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "orderID",
+								"type": "uint256"
+							},
+							{
+								"internalType": "address payable",
+								"name": "user",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "price",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "amount",
+								"type": "uint256"
+							},
+							{
+								"internalType": "enum SharedStructs.AssetType",
+								"name": "assetType",
+								"type": "uint8"
+							},
+							{
+								"internalType": "enum SharedStructs.PaymentMethod",
+								"name": "priceCurrency",
+								"type": "uint8"
+							},
+							{
+								"internalType": "bool",
+								"name": "isConfirmedByOwner1",
+								"type": "bool"
+							},
+							{
+								"internalType": "bool",
+								"name": "isConfirmedByOwner2",
+								"type": "bool"
+							},
+							{
+								"internalType": "string",
+								"name": "orderType",
+								"type": "string"
+							},
+							{
+								"internalType": "bool",
+								"name": "authorizedBuyersOnly",
+								"type": "bool"
+							}
+						],
+						"internalType": "struct CustomMultisig.PendingOrder[]",
+						"name": "orders",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "DisplayAllTransfers",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "bool",
+								"name": "isConfirmedByOwner1",
+								"type": "bool"
+							},
+							{
+								"internalType": "bool",
+								"name": "isConfirmedByOwner2",
+								"type": "bool"
+							},
+							{
+								"internalType": "uint256",
+								"name": "amount",
+								"type": "uint256"
+							},
+							{
+								"internalType": "address",
+								"name": "recipientAddress",
+								"type": "address"
+							},
+							{
+								"internalType": "enum SharedStructs.PaymentMethod",
+								"name": "paymentMethod",
+								"type": "uint8"
+							},
+							{
+								"internalType": "uint256",
+								"name": "orderID",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct CustomMultisig.TransferStatus[]",
+						"name": "",
+						"type": "tuple[]"
+					},
+					{
+						"components": [
+							{
+								"internalType": "bool",
+								"name": "isConfirmedByOwner1",
+								"type": "bool"
+							},
+							{
+								"internalType": "bool",
+								"name": "isConfirmedByOwner2",
+								"type": "bool"
+							},
+							{
+								"internalType": "uint256",
+								"name": "amount",
+								"type": "uint256"
+							},
+							{
+								"internalType": "address",
+								"name": "recipientAddress",
+								"type": "address"
+							},
+							{
+								"internalType": "enum SharedStructs.AssetType",
+								"name": "assetType",
+								"type": "uint8"
+							},
+							{
+								"internalType": "uint256",
+								"name": "orderID",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct CustomMultisig.TransferStatusNickelium[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "DisplayNextOrder",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "orderID",
+								"type": "uint256"
+							},
+							{
+								"internalType": "address payable",
+								"name": "user",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "price",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "amount",
+								"type": "uint256"
+							},
+							{
+								"internalType": "enum SharedStructs.AssetType",
+								"name": "assetType",
+								"type": "uint8"
+							},
+							{
+								"internalType": "enum SharedStructs.PaymentMethod",
+								"name": "priceCurrency",
+								"type": "uint8"
+							},
+							{
+								"internalType": "bool",
+								"name": "isConfirmedByOwner1",
+								"type": "bool"
+							},
+							{
+								"internalType": "bool",
+								"name": "isConfirmedByOwner2",
+								"type": "bool"
+							},
+							{
+								"internalType": "string",
+								"name": "orderType",
+								"type": "string"
+							},
+							{
+								"internalType": "bool",
+								"name": "authorizedBuyersOnly",
+								"type": "bool"
+							}
+						],
+						"internalType": "struct CustomMultisig.PendingOrder",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_orderID",
+						"type": "uint256"
+					}
+				],
+				"name": "DisplayTransferDetails",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "ConfirmedByOwner1",
+						"type": "bool"
+					},
+					{
+						"internalType": "bool",
+						"name": "ConfirmedByOwner2",
+						"type": "bool"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "recipientAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "orderID",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_index",
+						"type": "uint256"
+					}
+				],
+				"name": "ShowOrderByID",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "orderID",
+								"type": "uint256"
+							},
+							{
+								"internalType": "address payable",
+								"name": "user",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "price",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "amount",
+								"type": "uint256"
+							},
+							{
+								"internalType": "enum SharedStructs.AssetType",
+								"name": "assetType",
+								"type": "uint8"
+							},
+							{
+								"internalType": "enum SharedStructs.PaymentMethod",
+								"name": "priceCurrency",
+								"type": "uint8"
+							},
+							{
+								"internalType": "bool",
+								"name": "isConfirmedByOwner1",
+								"type": "bool"
+							},
+							{
+								"internalType": "bool",
+								"name": "isConfirmedByOwner2",
+								"type": "bool"
+							},
+							{
+								"internalType": "string",
+								"name": "orderType",
+								"type": "string"
+							},
+							{
+								"internalType": "bool",
+								"name": "authorizedBuyersOnly",
+								"type": "bool"
+							}
+						],
+						"internalType": "struct CustomMultisig.PendingOrder",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_index",
+						"type": "uint256"
+					}
+				],
+				"name": "ShowOrderByIndex2",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "orderID",
+								"type": "uint256"
+							},
+							{
+								"internalType": "address payable",
+								"name": "user",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "price",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "amount",
+								"type": "uint256"
+							},
+							{
+								"internalType": "enum SharedStructs.AssetType",
+								"name": "assetType",
+								"type": "uint8"
+							},
+							{
+								"internalType": "enum SharedStructs.PaymentMethod",
+								"name": "priceCurrency",
+								"type": "uint8"
+							},
+							{
+								"internalType": "bool",
+								"name": "isConfirmedByOwner1",
+								"type": "bool"
+							},
+							{
+								"internalType": "bool",
+								"name": "isConfirmedByOwner2",
+								"type": "bool"
+							},
+							{
+								"internalType": "string",
+								"name": "orderType",
+								"type": "string"
+							},
+							{
+								"internalType": "bool",
+								"name": "authorizedBuyersOnly",
+								"type": "bool"
+							}
+						],
+						"internalType": "struct CustomMultisig.PendingOrder",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "USDCContract",
+				"outputs": [
+					{
+						"internalType": "contract IERC20",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "USDTContract",
+				"outputs": [
+					{
+						"internalType": "contract ITether",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "adminControlContract",
+				"outputs": [
+					{
+						"internalType": "contract IAdminControl",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "authorizedAddresses",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_orderID",
+						"type": "uint256"
+					}
+				],
+				"name": "cancelConfirmOrder",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "centralContract",
+				"outputs": [
+					{
+						"internalType": "contract ICentral",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_orderID",
+						"type": "uint256"
+					}
+				],
+				"name": "confirmOrder",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "actionId",
+						"type": "uint256"
+					}
+				],
+				"name": "confirmRemoveOrder",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_orderID",
+						"type": "uint256"
+					}
+				],
+				"name": "confirmTransfer",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_recipientAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "createTransferEther",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_recipientAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "createTransferNickelium",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_recipientAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "createTransferUSDC",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_recipientAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "createTransferUSDT",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "defaultIndex",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_orderID",
+						"type": "uint256"
+					}
+				],
+				"name": "deletePendingOrder",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "actionId",
+						"type": "uint256"
+					}
+				],
+				"name": "deleteRemoveOrderAction",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_orderID",
+						"type": "uint256"
+					}
+				],
+				"name": "deleteTransfer",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "emergencyStop",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "escrowHandler",
+				"outputs": [
+					{
+						"internalType": "contract IEscrowHandler",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_orderID",
+						"type": "uint256"
+					}
+				],
+				"name": "executeOrder",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_orderID",
+						"type": "uint256"
+					}
+				],
+				"name": "executeTransfer",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getPendingRemoveOrderActions",
+				"outputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "",
+						"type": "uint256[]"
+					},
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "orderID",
+								"type": "uint256"
+							},
+							{
+								"internalType": "bool",
+								"name": "isConfirmedByOwner1",
+								"type": "bool"
+							},
+							{
+								"internalType": "bool",
+								"name": "isConfirmedByOwner2",
+								"type": "bool"
+							}
+						],
+						"internalType": "struct CustomMultisig.RemoveOrderAction[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "indexes",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "isConfirmedByOwner1",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "isConfirmedByOwner2",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "mine1NFT",
+				"outputs": [
+					{
+						"internalType": "contract INFTContract",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "mine2NFT",
+				"outputs": [
+					{
+						"internalType": "contract INFTContract",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "mine3NFT",
+				"outputs": [
+					{
+						"internalType": "contract INFTContract",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "mine4NFT",
+				"outputs": [
+					{
+						"internalType": "contract INFTContract",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "mine5NFT",
+				"outputs": [
+					{
+						"internalType": "contract INFTContract",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "nextRemoveOrderActionId",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "nickelium",
+				"outputs": [
+					{
+						"internalType": "contract INickelium",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "nickeliumContract",
+				"outputs": [
+					{
+						"internalType": "contract INickelium",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "orderRouter",
+				"outputs": [
+					{
+						"internalType": "contract IOrderRouter",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner1",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner2",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "paused",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint8",
+						"name": "contractChoice",
+						"type": "uint8"
+					},
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "payForNFTUpgrade",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "payerAddresses",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "pendingOrders",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "orderID",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address payable",
+						"name": "user",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "price",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "enum SharedStructs.AssetType",
+						"name": "assetType",
+						"type": "uint8"
+					},
+					{
+						"internalType": "enum SharedStructs.PaymentMethod",
+						"name": "priceCurrency",
+						"type": "uint8"
+					},
+					{
+						"internalType": "bool",
+						"name": "isConfirmedByOwner1",
+						"type": "bool"
+					},
+					{
+						"internalType": "bool",
+						"name": "isConfirmedByOwner2",
+						"type": "bool"
+					},
+					{
+						"internalType": "string",
+						"name": "orderType",
+						"type": "string"
+					},
+					{
+						"internalType": "bool",
+						"name": "authorizedBuyersOnly",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "orderID",
+						"type": "uint256"
+					}
+				],
+				"name": "proposeRemoveOrder",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "removeOrderActions",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "orderID",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "isConfirmedByOwner1",
+						"type": "bool"
+					},
+					{
+						"internalType": "bool",
+						"name": "isConfirmedByOwner2",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "resume",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_address",
+						"type": "address"
+					},
+					{
+						"internalType": "bool",
+						"name": "_status",
+						"type": "bool"
+					}
+				],
+				"name": "setAuthorizedAddress",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_mine1NFTAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_mine2NFTAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_mine3NFTAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_mine4NFTAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_mine5NFTAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "address payable",
+						"name": "_nickeliumAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_centralAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_USDTAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_usdcAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_escrowHandler",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_adminControlAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_orderRouterAddress",
+						"type": "address"
+					}
+				],
+				"name": "setContracts",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_owner1",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_owner2",
+						"type": "address"
+					}
+				],
+				"name": "setOwners",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_address",
+						"type": "address"
+					},
+					{
+						"internalType": "bool",
+						"name": "_status",
+						"type": "bool"
+					}
+				],
+				"name": "setPayerAddress",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "transferStatus",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "isConfirmedByOwner1",
+						"type": "bool"
+					},
+					{
+						"internalType": "bool",
+						"name": "isConfirmedByOwner2",
+						"type": "bool"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "recipientAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "enum SharedStructs.PaymentMethod",
+						"name": "paymentMethod",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint256",
+						"name": "orderID",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "transferStatusNickelium",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "isConfirmedByOwner1",
+						"type": "bool"
+					},
+					{
+						"internalType": "bool",
+						"name": "isConfirmedByOwner2",
+						"type": "bool"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "recipientAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "enum SharedStructs.AssetType",
+						"name": "assetType",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint256",
+						"name": "orderID",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"errors": {
+				"ReentrancyGuardReentrantCall()": [
+					{
+						"details": "Unauthorized reentrant call."
+					}
+				]
+			},
+			"events": {
+				"Paused(address)": {
+					"details": "Emitted when the pause is triggered by `account`."
+				},
+				"Unpaused(address)": {
+					"details": "Emitted when the pause is lifted by `account`."
+				}
+			},
+			"kind": "dev",
+			"methods": {
+				"paused()": {
+					"details": "Returns true if the contract is paused, and false otherwise."
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/CustomMultisig (2)_flattened.sol": "CustomMultisig"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 50
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/CustomMultisig (2)_flattened.sol": {
+			"keccak256": "0xd4f49f96bca4874a911c6e82777e913476e332b8ca12bbebfe5a2f593e5c0145",
+			"license": "Custom-License",
+			"urls": [
+				"bzz-raw://781a49ef8f2ebd73ea071a413f207d9f67e68fe374077ebadd8a165a30d4e65c",
+				"dweb:/ipfs/QmVRm1T71qB4xC9ew22j6mBVP4pwYUMeyzc2AjEqYMVsT5"
+			]
+		}
+	},
+	"version": 1
+}
