@@ -60,17 +60,17 @@ USDT address 0xdAC17F958D2ee523a2206206994597C13D831ec7
 USDC address 0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48
 
 ETHEREUM MAINET 3
-adminControl 0x0f3fee32B60eE9ba77fcBC4E0800b6eE378156a4  stelni multisig
+adminControl 0x0f3fee32B60eE9ba77fcBC4E0800b6eE378156a4  sends multisig
 balances 0xE19CaAcFDb7c2066aF8BF8BB05C05407f0830405
-central 0x613be0DD1483aC1F8f27aFA7EBb3b1848033bA69   stelni balances multisig
-multisig 0x83869875fA67BEa07099F005834678e6216b9c81   stelni orderRouter mines
-support multisig 0x5988B0c169eC1b261C91adDfB9371e196F6944f8  stelni mines
+central 0x613be0DD1483aC1F8f27aFA7EBb3b1848033bA69   sends balances multisig
+multisig 0x83869875fA67BEa07099F005834678e6216b9c81   sends orderRouter mines
+support multisig 0x5988B0c169eC1b261C91adDfB9371e196F6944f8  sends mines
 escrowHandler 0x1A6FA9A8053Dd6d40aa2899e5F61bc5a9c729bC8
-Nickelium 0xf3bB1ea42ACb1623e86EDb010D16E6e364a433fA   stelni balances mines
+Nickelium 0xf3bB1ea42ACb1623e86EDb010D16E6e364a433fA   sends balances mines
 order router 0x8E6A865C49f421660335ba00bD1CBC5FD650c186
 usdc Orders 0x5feFB514352f0101c9b222C17Df4703018B186Fe
 usdt Orders 0x274aD484f62f56A918B9549de72347C67682401C
-mine1 0xcd080778ae2c27a90f61A4149Ee4a2FCC87D8511   stelni nickelium kai central
+mine1 0xcd080778ae2c27a90f61A4149Ee4a2FCC87D8511   sends nickelium kai central
 mine2 0xf103af8768661f8067DDA7226564c00EaF90718f
 mine3 0x5CD1d72067CeBac1070697706B1F952e45B7ef9A
 mine4 0x9B29b9FcC2DCA5f842658833507AE6F7B7D803bA
@@ -88,71 +88,71 @@ MAINNET TEST TOKEN SALE
 --------------------------------------------------
 ETHEREUM MAINET 4
 
-admin control  0x0b7b9fEFcc8F5C8912537746bA5C5C542136c3A6  lamvani 2 multisig nickelium central escrow usdcOrders usdtOrders
-Balances   0x3E4ED16037651D85A9d4aC981D3c0394640A0973       lamvani nickelium central
-Central    0xca1D91233233f2cC0B0dC61a7c268dF5e223D081    lamvani 2 multisig nickelium escrow admin usdcOrders usdtOrders 5 mines
-multisig   0x4F9A728E300026E40A0d1c5E68806A17a530221d     lamvani admin central 
-escrow     0x19EFE23881C63b65565317d75FF695482D9F9fdd    lamvani 2 multisig nickelium central admin orderRouter usdcOrders usdtOrders 
+admin control  0x0b7b9fEFcc8F5C8912537746bA5C5C542136c3A6  receive from 2 multisig nickelium central escrow usdcOrders usdtOrders
+Balances   0x3E4ED16037651D85A9d4aC981D3c0394640A0973       receive from nickelium central
+Central    0xca1D91233233f2cC0B0dC61a7c268dF5e223D081    receive from 2 multisig nickelium escrow admin usdcOrders usdtOrders 5 mines
+multisig   0x4F9A728E300026E40A0d1c5E68806A17a530221d     receive from admin central 
+escrow     0x19EFE23881C63b65565317d75FF695482D9F9fdd    receive from 2 multisig nickelium central admin orderRouter usdcOrders usdtOrders 
 USDC       0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48
 Tether     0xdAC17F958D2ee523a2206206994597C13D831ec7
-nickelium   0x5E2aDEb82C79341C20fD94aC497f57ee5Ba50725   lamvani apo 2 multisig central escrow admincontrol usdcOrders usdtOrders 5 mines
-OrderRouter   0x70007c5C245cB32EC019d765080205B1726d15e9      lamvani 1 multisig 
-USDCorders     0xE445c4d9FD38b392A53C62ade6a875ec5Bd02b41      lamvani Nickelium central admin orderRouter 
-USDTorders      0x35345fC655ec44561a0d2183472DA68C2a049aa2      lamvani Nickelium central admin orderRouter
+nickelium   0x5E2aDEb82C79341C20fD94aC497f57ee5Ba50725   receive from apo 2 multisig central escrow admincontrol usdcOrders usdtOrders 5 mines
+OrderRouter   0x70007c5C245cB32EC019d765080205B1726d15e9      receive from 1 multisig 
+USDCorders     0xE445c4d9FD38b392A53C62ade6a875ec5Bd02b41      receive from Nickelium central admin orderRouter 
+USDTorders      0x35345fC655ec44561a0d2183472DA68C2a049aa2      receive from Nickelium central admin orderRouter
 CustomMultisigSupport  0x67a56f3cC5A71D8b32360Aa3B431f9aAd9B575Ae
-Mine1_NFT    0x948432e2699eaB15383a23659F3d1d1cfDDab0DF      lamvani 2 multisig Nickelium 
-Mine2_NFT    0xb838821C8A4ef6e9896dd2B106AC3C4da31CC677      lamvani 2 multisig Nickelium
-Mine3_NFT     0x5B684725c49B5e40Af6605b04Ef360130cd37aD3     lamvani 2 multisig Nickelium
-Mine4_NFT     0xD8fAb61A582ba77FF0118d944B92362c1607e8FB     lamvani 2 multisig Nickelium
-Mine5_NFT     0xC993D5BF1A6DC36841BBCF1eb0cF1044C192a9F9     lamvani 2 multisig Nickelium
-TokenSale  0xee97C44fFa2d225ED9899ED7a9F6a7398f628dc7   xoris reentral protect
+Mine1_NFT    0x948432e2699eaB15383a23659F3d1d1cfDDab0DF      receive from 2 multisig Nickelium 
+Mine2_NFT    0xb838821C8A4ef6e9896dd2B106AC3C4da31CC677      receive from 2 multisig Nickelium
+Mine3_NFT     0x5B684725c49B5e40Af6605b04Ef360130cd37aD3     receive from 2 multisig Nickelium
+Mine4_NFT     0xD8fAb61A582ba77FF0118d944B92362c1607e8FB     receive from 2 multisig Nickelium
+Mine5_NFT     0xC993D5BF1A6DC36841BBCF1eb0cF1044C192a9F9     receive from 2 multisig Nickelium
+TokenSale  0xee97C44fFa2d225ED9899ED7a9F6a7398f628dc7   
 
 ----------------------------------------------------------------------------------------
 
 ETHEREUM MAINET 5
 
-admin control  // 0x32c3cA0D095b063a2D74224FcC4eA8E3Dc02327c  lamvani 2 multisig nickelium central escrow usdcOrders usdtOrders
-admin control  0x19B8f0ae7cc9811D632d3F7CC6BECFaB092EBE37   lamvani 2 multisig nickelium central escrow usdcOrders usdtOrders
-Balances   0xDB88123DECaba8A7bF8E185656921dA5Ca002998       lamvani nickelium central 
-Central    0xF4Bfa02f203C02A89c7D597C0626d28F07CAD530    lamvani 2 multisig nickelium escrow admin usdcOrders usdtOrders 5 mines 
-multisig   0x00F3Eb7A7391e5A4152F2F1161d3efC3c4718EA8     lamvani admin central 
-escrow     0x685B09Cfd468096b397D59FeAde9A4a5237e0EB8    lamvani 2 multisig nickelium central admin orderRouter usdcOrders usdtOrders 
+admin control  // 0x32c3cA0D095b063a2D74224FcC4eA8E3Dc02327c  receive from 2 multisig nickelium central escrow usdcOrders usdtOrders
+admin control  0x19B8f0ae7cc9811D632d3F7CC6BECFaB092EBE37   receive from 2 multisig nickelium central escrow usdcOrders usdtOrders
+Balances   0xDB88123DECaba8A7bF8E185656921dA5Ca002998       receive from nickelium central 
+Central    0xF4Bfa02f203C02A89c7D597C0626d28F07CAD530    receive from 2 multisig nickelium escrow admin usdcOrders usdtOrders 5 mines 
+multisig   0x00F3Eb7A7391e5A4152F2F1161d3efC3c4718EA8     receive from admin central 
+escrow     0x685B09Cfd468096b397D59FeAde9A4a5237e0EB8    receive from 2 multisig nickelium central admin orderRouter usdcOrders usdtOrders 
 USDC       0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48
 Tether     0xdAC17F958D2ee523a2206206994597C13D831ec7
-nickelium   0x3F9D44724B43Ac77e67866aC2B90E41116c59b55   lamvani apo 2 multisig central escrow admincontrol usdcOrders usdtOrders 5 mines 
-OrderRouter   0xB1435E377436b854A77011FE755e7EAc2EE84110      lamvani 1 multisig 
-USDCorders     0xff76815CcdD3a6c6Fb4505f5F701Bf29d10FE5C2      lamvani Nickelium central admin orderRouter 
-USDTorders      0xa00C597BF548933Ab8e86aFFc8D3C82dc31Ce0A5      lamvani Nickelium central admin orderRouter 
+nickelium   0x3F9D44724B43Ac77e67866aC2B90E41116c59b55   receive from apo 2 multisig central escrow admincontrol usdcOrders usdtOrders 5 mines 
+OrderRouter   0xB1435E377436b854A77011FE755e7EAc2EE84110      receive from 1 multisig 
+USDCorders     0xff76815CcdD3a6c6Fb4505f5F701Bf29d10FE5C2      receive from Nickelium central admin orderRouter 
+USDTorders      0xa00C597BF548933Ab8e86aFFc8D3C82dc31Ce0A5      receive from Nickelium central admin orderRouter 
 CustomMultisigSupport  0x619e973F1E0595f708820b5b9e8bB6e6f3019Be5 
-Mine1_NFT    0xB5883827D1342e7dD2401d92882fBf85836487fe      lamvani 2 multisig Nickelium 
-Mine2_NFT    0x6c24Ca0237176acC586CA2FF913C9a3a581d564d      lamvani 2 multisig Nickelium 
-Mine3_NFT     0x3d09eA088E2739e1F2eE5513E9aA9248aB2cd3c0     lamvani 2 multisig Nickelium 
-Mine4_NFT     0xe9198c891679AAe82118678081455E95cE8ebe93     lamvani 2 multisig Nickelium
-Mine5_NFT    0xbCB162004d61D2A87633f24b0d3b3701F173EDB6      lamvani 2 multisig Nickelium
+Mine1_NFT    0xB5883827D1342e7dD2401d92882fBf85836487fe      receive from 2 multisig Nickelium 
+Mine2_NFT    0x6c24Ca0237176acC586CA2FF913C9a3a581d564d      receive from 2 multisig Nickelium 
+Mine3_NFT     0x3d09eA088E2739e1F2eE5513E9aA9248aB2cd3c0     receive from 2 multisig Nickelium 
+Mine4_NFT     0xe9198c891679AAe82118678081455E95cE8ebe93     receive from 2 multisig Nickelium
+Mine5_NFT    0xbCB162004d61D2A87633f24b0d3b3701F173EDB6      receive from 2 multisig Nickelium
 ProofOfReserves  // 0x115B9E125f91A2B19869Cb7E331876399d8d6C8b
 ProofOfReserves  0xc1Dc20D9b6e0Cd04b94cc9B6C131cEb821f6D8C3
 TokenSale  0x9676ee7D7c27d934c5B85Cf2B1b94f4660864E25 ---
 
 ETHEREUM MAINET 6
 
-admin control  0xed695b26fA6963e6a06f00A197216203BDA291F4   lamvani 2 multisig nickelium central escrow usdcOrders usdtOrders
-Balances   0x0b19043C2792421710e98234d1249da31a6b7aBC       lamvani nickelium central 
+admin control  0xed695b26fA6963e6a06f00A197216203BDA291F4   receive from 2 multisig nickelium central escrow usdcOrders usdtOrders
+Balances   0x0b19043C2792421710e98234d1249da31a6b7aBC       receive from nickelium central 
 Central   // 0x7E23ed0D10121056Bca9A7Eb873Fa9cE670791F4     
-Central      0x4D275d73C8f28e3e0ce5324Bf17E4c7f4094ddB3    lamvani 2 multisig nickelium escrow admin usdcOrders usdtOrders 5 mines
-multisig   0x1A48ee7F5c0ed14265Cb75eDe85398a479a61Bc8     lamvani admin central 
-escrow     0xA78Ae61Abdd706887AB4b2E11Ea68B90bB6D1424    lamvani 2 multisig nickelium central admin orderRouter usdcOrders usdtOrders 
+Central      0x4D275d73C8f28e3e0ce5324Bf17E4c7f4094ddB3    receive from 2 multisig nickelium escrow admin usdcOrders usdtOrders 5 mines
+multisig   0x1A48ee7F5c0ed14265Cb75eDe85398a479a61Bc8     receive from admin central 
+escrow     0xA78Ae61Abdd706887AB4b2E11Ea68B90bB6D1424    receive from 2 multisig nickelium central admin orderRouter usdcOrders usdtOrders 
 USDC       0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48
 Tether     0xdAC17F958D2ee523a2206206994597C13D831ec7
-nickelium   0xed76b6a5B1Ed4Da0ec7AAc860a52f709CBa0d5db   lamvani apo 2 multisig central escrow admincontrol usdcOrders usdtOrders 5 mines -
-OrderRouter   0xB1435E377436b854A77011FE755e7EAc2EE84110      lamvani 1 multisig 
-USDCorders     0xff76815CcdD3a6c6Fb4505f5F701Bf29d10FE5C2      lamvani Nickelium central admin orderRouter 
-USDTorders      0xa00C597BF548933Ab8e86aFFc8D3C82dc31Ce0A5      lamvani Nickelium central admin orderRouter 
+nickelium   0xed76b6a5B1Ed4Da0ec7AAc860a52f709CBa0d5db   receive from apo 2 multisig central escrow admincontrol usdcOrders usdtOrders 5 mines -
+OrderRouter   0xB1435E377436b854A77011FE755e7EAc2EE84110      receive from 1 multisig 
+USDCorders     0xff76815CcdD3a6c6Fb4505f5F701Bf29d10FE5C2      receive from Nickelium central admin orderRouter 
+USDTorders      0xa00C597BF548933Ab8e86aFFc8D3C82dc31Ce0A5      receive from Nickelium central admin orderRouter 
 CustomMultisigSupport  0x619e973F1E0595f708820b5b9e8bB6e6f3019Be5 
-Mine1_NFT    0xB5883827D1342e7dD2401d92882fBf85836487fe      lamvani 2 multisig Nickelium 
-Mine2_NFT    0x6c24Ca0237176acC586CA2FF913C9a3a581d564d      lamvani 2 multisig Nickelium 
-Mine3_NFT     0x3d09eA088E2739e1F2eE5513E9aA9248aB2cd3c0     lamvani 2 multisig Nickelium 
-Mine4_NFT     0xe9198c891679AAe82118678081455E95cE8ebe93     lamvani 2 multisig Nickelium
-Mine5_NFT    0xbCB162004d61D2A87633f24b0d3b3701F173EDB6      lamvani 2 multisig Nickelium
+Mine1_NFT    0xB5883827D1342e7dD2401d92882fBf85836487fe      receive from 2 multisig Nickelium 
+Mine2_NFT    0x6c24Ca0237176acC586CA2FF913C9a3a581d564d      receive from 2 multisig Nickelium 
+Mine3_NFT     0x3d09eA088E2739e1F2eE5513E9aA9248aB2cd3c0     receive from 2 multisig Nickelium 
+Mine4_NFT     0xe9198c891679AAe82118678081455E95cE8ebe93     receive from 2 multisig Nickelium
+Mine5_NFT    0xbCB162004d61D2A87633f24b0d3b3701F173EDB6      receive from 2 multisig Nickelium
 ProofOfReserves  // 0x115B9E125f91A2B19869Cb7E331876399d8d6C8b
 ProofOfReserves  0xc1Dc20D9b6e0Cd04b94cc9B6C131cEb821f6D8C3
-TokenSale  0x9676ee7D7c27d934c5B85Cf2B1b94f4660864E25 ---
+TokenSale  0x9676ee7D7c27d934c5B85Cf2B1b94f4660864E25 
