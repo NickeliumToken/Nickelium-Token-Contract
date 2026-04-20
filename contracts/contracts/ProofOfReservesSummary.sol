@@ -246,9 +246,16 @@ function getAllTimeGrandTotalString() external pure returns (string memory) {
         return (totalVolume, totalTonnage, totalCoT, totalFeT, totalNiT);
     }
 
-    function getOriginTotals() external view returns (uint256 land, uint256 sea, uint256 finance) {
+    /*function getOriginTotals() external view returns (uint256 land, uint256 sea, uint256 finance) {
         return (landNiTotal, seaNiTotal, financeNiTotal);
-    }
+    }*/
+    function getOriginTotals() external view returns (uint256 land, uint256 sea, uint256 finance) {
+    return (
+        landNiTotal * 1_000_000,  // tonnes → grams
+        seaNiTotal * 1_000_000,
+        financeNiTotal * 1_000_000
+    );
+}
 
     // ============================================
     // DISPLAY FUNCTIONS
